@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2021_05_10_211954) do
     t.string "title"
     t.integer "year"
     t.string "rated"
-    t.string "realeased"
+    t.string "released"
     t.string "genre"
     t.string "director"
     t.string "writer"

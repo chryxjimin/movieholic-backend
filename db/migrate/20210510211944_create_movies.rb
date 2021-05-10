@@ -4,7 +4,7 @@ class CreateMovies < ActiveRecord::Migration[6.0]
       t.string :title
       t.integer :year
       t.string :rated
-      t.string :realeased
+      t.string :released
       t.string :genre
       t.string :director
       t.string :writer
