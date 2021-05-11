@@ -8,7 +8,7 @@ class Api::V1::MoviesController < ApplicationController
         @movie = Movie.new(movie_params)
 
         if @movie.save
-            render json: @account
+            render json: @movie
         else 
             render json: {error: 'Error'}
         end
@@ -27,6 +27,6 @@ class Api::V1::MoviesController < ApplicationController
     private
 
         def movie_params
-            params.require(:movie).permit(:title, :year, :rated, :released, :genre, :director, :writer, :language, :box_office)
+            params.require(:movie).permit(:title, :year, :rated, :released, :genre, :director, :writer, :language, :box_office, :actors)
         end
 end
