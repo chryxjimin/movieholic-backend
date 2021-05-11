@@ -10,7 +10,7 @@ class CreateMovies < ActiveRecord::Migration[6.0]
       t.string :writer
       t.string :language
       t.string :box_office
-      t.string :actorså
+      t.string :actors
 
       t.timestamps
     end
