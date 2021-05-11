@@ -1,7 +1,27 @@
 class Api::V1::MoviesController < ApplicationController
     def index
-        movie = Movie.all
-        render json: movie
+        @movies = Movie.all
+        render json: @movies
+    end
+
+    def create
+        @movie = Movie.new(movie_params)
+
+        if @movie.save
+            render json: @account
+        else 
+            render json: {error: 'Error'}
+        end
+    end
+
+    def show
+        @movie = Movie.find(params[:id])
+        render json: @movie
+    end
+
+    def destroy
+        @movie = Movie.find(params[:id])
+        @movie.destroy
     end
 
     private
