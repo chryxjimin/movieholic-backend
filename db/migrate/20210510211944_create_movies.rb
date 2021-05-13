@@ -11,6 +11,7 @@ class CreateMovies < ActiveRecord::Migration[6.0]
       t.string :language
       t.string :box_office
       t.string :actors
+      t.string :poster
 
       t.timestamps
     end

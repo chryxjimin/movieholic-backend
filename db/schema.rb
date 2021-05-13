@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2021_05_10_211954) do
     t.string "language"
     t.string "box_office"
     t.string "actors"
+    t.string "poster"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
