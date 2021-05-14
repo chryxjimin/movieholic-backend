@@ -9,6 +9,7 @@ gem 'rest-client'
 gem 'dotenv-rails'
 gem 'open-uri'
 gem 'json'
+gem 'figaro' 
 
 gem 'active_model_serializers'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
