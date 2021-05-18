@@ -6,10 +6,12 @@ class Api::V1::ReviewsController < ApplicationController
     end
 
     def create
-        @review = Review.new(review_params)
+        # binding.pry
+        @movie = Movie.find(params[:movie_id])
+        @review = @movie.reviews.new(review_params)
 
         if @review.save
-            render json: @review
+            render json: @movie
         else 
             render json: {error: 'Error'}
         end
@@ -21,8 +23,10 @@ class Api::V1::ReviewsController < ApplicationController
     end
 
     def destroy
-        @review = Review.find(params[:id])
+        # binding.pry
+        @review = Review.find(params[:movie_id])
         @review.destroy
+        render json: @review.movie
     end
 
     private

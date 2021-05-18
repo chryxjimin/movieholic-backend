@@ -5,13 +5,19 @@ class CreateMovies < ActiveRecord::Migration[6.0]
       t.integer :year
       t.string :rated
       t.string :released
+      t.string :runtime
       t.string :genre
       t.string :director
       t.string :writer
-      t.string :language
-      t.string :box_office
       t.string :actors
+      t.string :language
+      t.string :country
+      t.string :awards
       t.string :poster
+      t.string :imdbRating
+      t.string :imdbVotes
+      t.string :box_office
+      t.string :production
 
       t.timestamps
     end

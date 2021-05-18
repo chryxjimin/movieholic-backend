@@ -28,6 +28,6 @@ class Api::V1::MoviesController < ApplicationController
     private
 
         def movie_params
-            params.require(:movie).permit(:title, :year, :rated, :released, :genre, :director, :writer, :language, :box_office, :actors)
+            params.require(:movie).permit(:title, :year, :rated, :released, :runtime, :genre, :director, :writer, :actors, :language, :country, :awards, :poster, :imdbRating, :imdbVotes, :box_office, :production)
         end
 end
