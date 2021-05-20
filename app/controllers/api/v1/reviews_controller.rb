@@ -17,10 +17,11 @@ class Api::V1::ReviewsController < ApplicationController
         end
     end
 
-    def show
-        @review = Review.find(params[:id])
-        render json: @review
-    end
+    # def show
+    #     # binding.pry
+    #     @review = Review.find(params[:movie_id])
+    #     render json: @review
+    # end
 
     def destroy
         # binding.pry
