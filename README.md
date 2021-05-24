@@ -1,24 +1,35 @@
-# README
+# MOVIEHOLIC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Movieholic is a Single Page Application(SPA) that allows users to create reviews for movies.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Add this line to your application's Gemfile:
 
-* System dependencies
+```ruby
+gem 'movieholic'
+```
 
-* Configuration
+And then execute:
 
-* Database creation
+    $ bundle
 
-* Database initialization
+Or install it yourself as:
 
-* How to run the test suite
+    $ gem install movieholic
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Requirements
+https://github.com/chryxjimin/movieholic_frontend
 
-* ...
+
+## Contributing
+
+Bug Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
