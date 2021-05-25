@@ -9,7 +9,6 @@ class Api
     API_KEY = ENV['API_KEY']
     
     def get_movies
-        # puts API_KEY
         url = "http://www.omdbapi.com/?s=batman&apikey=#{API_KEY}"
         uri = URI.parse(url)
         response_body = uri.read
@@ -18,7 +17,6 @@ class Api
             title = movie["Title"]
             year = movie["Year"]
             poster = movie["Poster"]
-            # binding.pry
             Movie.create(title: title, year: year, poster: poster)
         end
     end

@@ -6,7 +6,6 @@ class Api::V1::ReviewsController < ApplicationController
     end
 
     def create
-        # binding.pry
         @movie = Movie.find(params[:movie_id])
         @review = @movie.reviews.new(review_params)
 
@@ -17,14 +16,8 @@ class Api::V1::ReviewsController < ApplicationController
         end
     end
 
-    # def show
-    #     # binding.pry
-    #     @review = Review.find(params[:movie_id])
-    #     render json: @review
-    # end
 
     def destroy
-        # binding.pry
         @review = Review.find(params[:movie_id])
         @review.destroy
         render json: @review.movie
